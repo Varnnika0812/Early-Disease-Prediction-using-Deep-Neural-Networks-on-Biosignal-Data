@@ -1,0 +1,20 @@
+.venv/
+.venv311/
+__pycache__/
+*.pyc
+users.db
+.env
+cloudflared*.log
+
+# Local IDE files
+.idea/
+
+# Large raw datasets are not needed for the hosted demo when artifacts are present.
+dataset/
+
+# Keep the small trained model artifacts for deployment.
+!artifacts/
+!artifacts/ecg_cnn.keras
+!artifacts/scaler.joblib
+!artifacts/metrics.joblib
+!artifacts/confusion_matrix.npy
